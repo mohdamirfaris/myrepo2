@@ -15,8 +15,13 @@ alert("Welcome")
 
 console.log("is this logged at the console?")
 
-document.getElementById("button").textContent = "the button has been clicked"
+// document.getElementById("button").textContent = "the button has been clicked"
 
+const button = document.getElementById("button");
+
+button.addEventListener("click", function() {
+    button.textContent = "The button has been clicked";
+});
     </script>
 
 </body>
